@@ -16,5 +16,5 @@ public abstract class Tile {
 		return position;
 	}
 	
-	public String toString();
+	public abstract String toString();
 }
