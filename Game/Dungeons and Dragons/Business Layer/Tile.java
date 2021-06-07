@@ -15,4 +15,6 @@ public abstract class Tile {
 	public Position getPosition() {
 		return position;
 	}
+	
+	public String toString();
 }
