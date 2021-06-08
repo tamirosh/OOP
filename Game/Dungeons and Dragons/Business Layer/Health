@@ -22,13 +22,13 @@ public class Health {
     }
     
     public int healthLevelUp(int level) {
-        this.healthPool = this.healthPool+ 10 * level;
+        this.healthPool = this.healthPool + 10 * level;
         this.healthAmount = this.healthPool;
         return 10 * level;
     }
     
     public void HealthPoolGoUp(int healthAdded) {
-        this.healthPool =this.healthPool+ healthAdded;
+        this.healthPool = this.healthPool + healthAdded;
     }
     
     public void HealthAmountGoDown(final int healthLost) {
