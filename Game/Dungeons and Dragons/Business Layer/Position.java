@@ -3,14 +3,17 @@ package BusinessLayer;
 
 public class Position
 {
+    //fields:
     private int x;
     private int y;
     
+    //constructor:
     public Position(int x,int y) {
         this.x = x;
         this.y = y;
     }
     
+    //methods:
     public int getx() {
         return this.x;
     }
