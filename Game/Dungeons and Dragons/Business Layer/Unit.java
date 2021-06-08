@@ -3,17 +3,15 @@ public abstract class Unit extends Tile{
 	
 	//fields:
 	private String Name;
-	private int healthPool;
-	private int healthAmount;
+	private Health health;
 	private int attackPoints;
 	private int defencePoints;
 	
 	//constructor:
-	public Unit(char typeTile, Position position, String Name, int healthPool, int healthAmount, int attackPoints, int defencePoints) {
+	public Unit(char typeTile, Position position, String Name, Health helth, int attackPoints, int defencePoints) {
 		super(typeTile, position);
 		this.Name = Name;
-		this.healthPool = healthPool;
-		this.healthAmount = healthAmount;
+		this.health = health;
 		this.attackPoints = attackPoints;
 		this.defencePoints = defencePoints;
 	}
