@@ -1,5 +1,5 @@
 package BusinessLayer;
-public abstract class Unit extends Tile{
+public abstract class Unit extends Tile {
 	
 	//fields:
 		protected String Name;
