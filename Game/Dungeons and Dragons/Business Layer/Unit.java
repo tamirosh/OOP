@@ -1,7 +1,7 @@
 package BusinessLayer;
 public abstract class Unit extends Tile {
 	
-	//fields:
+		//fields:
 		protected String Name;
 		protected Health health;
 		protected int attackPoints;
@@ -29,8 +29,16 @@ public abstract class Unit extends Tile {
 			return this.health.getHealthAmount();
 		}
 		
-		public Health getHealth() {
-			return this.health;
+		public void HealthPoolGoUp(int healthAdded) {
+			this.health.HealthPoolGoUp(healthAdded);
+		}
+		
+		public void HealthAmountGoUp(int healthAdded) {
+			this.health.HealthAmountGoUp(healthAdded);
+		}
+		
+		public void HealthAmountGoDown(int healthDecreased) {
+			this.health.HealthAmountGoDown(healthDecreased);
 		}
 		
 		public int getAttackPoints() {
@@ -41,24 +49,22 @@ public abstract class Unit extends Tile {
 			return this.defencePoints;
 		}
 		
-		public void subtractAttackPoints(int points) {
+		protected void subtractAttackPoints(int points) {
 			this.attackPoints -= points;
 		}
 		
-		public void addAttackPoints(int points) {
+		protected void addAttackPoints(int points) {
 			this.attackPoints += points;
 		}
 		
-		public void subtractDefencePoints(int points) {
+		protected void subtractDefencePoints(int points) {
 			this.defencePoints -= points;
 		}
 		
-		public void addDefencePoints(int points) {
+		protected void addDefencePoints(int points) {
 			this.defencePoints += points;
 		}
 		
-		public abstract String toString();
-		
-		public abstract String attack(Unit unit);
+		public abstract String attack(Unit unitAttacked);
 		
 }
